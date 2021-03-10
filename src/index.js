@@ -1,8 +1,8 @@
-import React, { cloneElement } from 'react';
-// import ReactDom from 'react-dom';
+import React, {Component} from 'react';
+import * as ReactDOM from 'react-dom';
 
-import ReactDOM from './Mreact/react-dom'
-import Component from './Mreact/Component'
+// import ReactDOM from './Mreact/react-dom'
+// import Component from './Mreact/Component'
 import './index.css'
 
 function FunctionComponent(props) {

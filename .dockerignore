@@ -1,8 +1,0 @@
-.cache
-node_modules
-.vscode
-client
-build
-server
-logs
-config
