@@ -11,7 +11,7 @@ function render(vnode, container) {
   // const node = createNode(vnode);
   // // node->container
   // container.appendChild(node);
-
+  // 手动创建一个fiber节点
   wipRoot = {
     type: "div",
     props: {
@@ -128,15 +128,12 @@ let nextUnitOfWOrk = null;
 
 function performUnitOfWork(workInProgress) {
   // step1 执行任务
-  // todo
   const {type} = workInProgress;
   if (typeof type === "string") {
     // 原生标签节点
     updateHostComponent(workInProgress);
   }
-
   // step2 并且返回下一个执行任务
-  //王朝的故事
   if (workInProgress.child) {
     return workInProgress.child;
   }

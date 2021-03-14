@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
-import * as ReactDOM from 'react-dom';
+// import React, {Component} from 'react';
+// import * as ReactDOM from 'react-dom';
 
-// import ReactDOM from './Mreact/react-dom'
-// import Component from './Mreact/Component'
+import ReactDOM from './Mreact2/react-dom'
+import Component from './Mreact2/Component'
 import './index.css'
 
 function FunctionComponent(props) {
@@ -17,10 +17,9 @@ class ClassComponent extends Component {
 
 const jsx = (
    <div className="content">
-     <h1>手写react render component组件</h1>
+     <span>手写一个fiber</span>
      <a href="www.baidu.com">明非</a>
-     <FunctionComponent name="func" />
-     <ClassComponent name='class'/>
+
    </div>
  )
 
